@@ -16,7 +16,7 @@ class CookieBanner extends React.Component {
     this.state = {
       preferencesCookies: true,
       statisticsCookies: true,
-      marketingCookies: false,
+      marketingCookies: true,
     };
 
     this.onScroll = this.onScroll.bind(this);
@@ -25,6 +25,7 @@ class CookieBanner extends React.Component {
     this.onToggleMarketingCookies = this.onToggleMarketingCookies.bind(this);
     this.confirm = this.confirm.bind(this);
     this.decline = this.decline.bind(this);
+    
     this.consetsCallback = this.consetsCallback.bind(this);
 
     this.cookies = new Cookies();
@@ -163,6 +164,7 @@ class CookieBanner extends React.Component {
       message,
       policyLink,
       privacyPolicyLinkText,
+      privacyPolicyClick,
       necessaryOptionText,
       preferencesOptionText,
       statisticsOptionText,
@@ -173,6 +175,9 @@ class CookieBanner extends React.Component {
       showPreferencesOption,
       showStatisticsOption,
       showMarketingOption,
+      preferencesDefault,
+      statisticsDefault,
+      marketingDefault,
     } = this.props;
 
     if (this.cookies.get(CONSENT_GIVEN)) {
@@ -196,11 +201,15 @@ class CookieBanner extends React.Component {
       showPreferencesOption,
       showStatisticsOption,
       showMarketingOption,
+      preferencesDefault,
+      statisticsDefault,
+      marketingDefault,
       onTogglePreferencesCookies: this.onTogglePreferencesCookies,
       onToggleStatisticsCookies: this.onToggleStatisticsCookies,
       onToggleMarketingCookies: this.onToggleMarketingCookies,
       onDecline: this.decline,
       onConfirm: this.confirm,
+      onPrivacyPolicy: privacyPolicyClick,
     };
 
     return (<CookieBannerContent {...contentProps} />);
@@ -224,6 +233,9 @@ CookieBanner.protoTypes = {
   showPreferencesOption: PropTypes.bool,
   showStatisticsOption: PropTypes.bool,
   showMarketingOption: PropTypes.bool,
+  preferencesDefault: PropTypes.bool,
+  statisticsDefault: PropTypes.bool,
+  marketingDefault: PropTypes.bool,
   onAccept: PropTypes.func,
   onAcceptPreferences: PropTypes.func,
   onAcceptStatistics: PropTypes.func,

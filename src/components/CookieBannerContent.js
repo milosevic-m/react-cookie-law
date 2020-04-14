@@ -19,11 +19,15 @@ export default (props = {}) => {
     showPreferencesOption = true,
     showStatisticsOption = true,
     showMarketingOption = true,
+    preferencesDefault = true,
+    statisticsDefault = true,
+    marketingDefault = true,
     onTogglePreferencesCookies = Function,
     onToggleStatisticsCookies = Function,
     onToggleMarketingCookies = Function,
     onDecline = Function,
     onConfirm = Function,
+    onPrivacyPolicy = Function,
   } = props;
 
   const {
@@ -62,7 +66,7 @@ export default (props = {}) => {
                 text={preferencesOptionText}
                 styles={cookieOptionStyle}
                 onChange={onTogglePreferencesCookies}
-                checked
+                checked={preferencesDefault}
               />
             )
           }
@@ -74,7 +78,7 @@ export default (props = {}) => {
                 text={statisticsOptionText}
                 styles={cookieOptionStyle}
                 onChange={onToggleStatisticsCookies}
-                checked
+                checked={statisticsDefault}
               />
             )
           }
@@ -86,12 +90,13 @@ export default (props = {}) => {
                 text={marketingOptionText}
                 styles={cookieOptionStyle}
                 onChange={onToggleMarketingCookies}
+                checked={marketingDefault}
               />
             )
           }
         </div>
 
-        <a href={policyLink} className="react-cookie-law-policy" style={policyStyle}>{privacyPolicyLinkText}</a>
+        <a href={policyLink} className="react-cookie-law-policy" style={policyStyle} onClick={() => onPrivacyPolicy()}>{privacyPolicyLinkText}</a>
 
         <div className="react-cookie-law-button-wrapper" style={buttonWrapperStyle}>
           {
