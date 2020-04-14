@@ -13,23 +13,10 @@ class CookieBanner extends React.Component {
   constructor(props) {
     super(props);
 
-    console.log(props.preferencesDefault)
-    console.log(props.statisticsDefault)
-    console.log(props.marketingDefault)
-
-
-    const prefDefault = props.preferencesDefault ? props.preferencesDefault : true
-    const statDefault = props.statisticsDefault ? props.statisticsDefault : true
-    const marketDefault = props.marketingDefault ? props.marketingDefault : true
-    
-    console.log(prefDefault)
-    console.log(statDefault)
-    console.log(marketDefault)
-
     this.state = {
-      preferencesCookies: prefDefault,
-      statisticsCookies: statDefault,
-      marketingCookies: marketDefault,
+      preferencesCookies: props.preferencesDefault,
+      statisticsCookies: props.statisticsDefault,
+      marketingCookies: props.marketingDefault,
     };
 
     this.onScroll = this.onScroll.bind(this);
@@ -257,5 +244,12 @@ CookieBanner.protoTypes = {
   onDeclineStatistics: PropTypes.func,
   onDeclineMarketing: PropTypes.func,
 };
+
+CookieBanner.defaultProps = {
+    preferencesDefault: true,
+    statisticsDefault: true,
+    marketingDefault: true,
+      
+}
 
 export default CookieBanner;
