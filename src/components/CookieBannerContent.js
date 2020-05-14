@@ -96,7 +96,7 @@ export default (props = {}) => {
           }
         </div>
 
-        <a href={policyLink} className="react-cookie-law-policy" style={policyStyle} onClick={() => onPrivacyPolicy()}>{privacyPolicyLinkText}</a>
+        <a className="react-cookie-law-policy" style={policyStyle} onClick={() => onPrivacyPolicy()}>{privacyPolicyLinkText}</a>
 
         <div className="react-cookie-law-button-wrapper" style={buttonWrapperStyle}>
           {

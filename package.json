@@ -28,6 +28,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack -p",
     "test": "jest --coverage",
+    "updatesnapshot": "jest -u",
     "precommit": "lint-staged",
     "prepublish": "npm test && npm run build",
     "lint": "eslint 'src/**/*.js'",

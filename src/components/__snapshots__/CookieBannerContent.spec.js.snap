@@ -221,7 +221,6 @@ ShallowWrapper {
         </div>
         <a
           className="react-cookie-law-policy"
-          href="/#"
           onClick={[Function]}
           style={
             Object {
@@ -479,7 +478,6 @@ ShallowWrapper {
           </div>,
           <a
             className="react-cookie-law-policy"
-            href="/#"
             onClick={[Function]}
             style={
               Object {
@@ -935,7 +933,6 @@ ShallowWrapper {
           "props": Object {
             "children": "Privacy Policy",
             "className": "react-cookie-law-policy",
-            "href": "/#",
             "onClick": [Function],
             "style": Object {
               "color": "#000000",
@@ -1247,7 +1244,6 @@ ShallowWrapper {
           </div>
           <a
             className="react-cookie-law-policy"
-            href="/#"
             onClick={[Function]}
             style={
               Object {
@@ -1505,7 +1501,6 @@ ShallowWrapper {
             </div>,
             <a
               className="react-cookie-law-policy"
-              href="/#"
               onClick={[Function]}
               style={
                 Object {
@@ -1961,7 +1956,6 @@ ShallowWrapper {
             "props": Object {
               "children": "Privacy Policy",
               "className": "react-cookie-law-policy",
-              "href": "/#",
               "onClick": [Function],
               "style": Object {
                 "color": "#000000",

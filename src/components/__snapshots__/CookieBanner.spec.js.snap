@@ -4,7 +4,10 @@ exports[`CookieBanner component should be rendered 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CookieBanner
+    marketingDefault={true}
     message="Text"
+    preferencesDefault={true}
+    statisticsDefault={true}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -22,7 +25,7 @@ ShallowWrapper {
       "acceptButtonText": undefined,
       "className": undefined,
       "declineButtonText": undefined,
-      "marketingDefault": undefined,
+      "marketingDefault": true,
       "marketingOptionText": undefined,
       "message": "Text",
       "necessaryOptionText": undefined,
@@ -33,14 +36,14 @@ ShallowWrapper {
       "onTogglePreferencesCookies": [Function],
       "onToggleStatisticsCookies": [Function],
       "policyLink": undefined,
-      "preferencesDefault": undefined,
+      "preferencesDefault": true,
       "preferencesOptionText": undefined,
       "privacyPolicyLinkText": undefined,
       "showDeclineButton": undefined,
       "showMarketingOption": undefined,
       "showPreferencesOption": undefined,
       "showStatisticsOption": undefined,
-      "statisticsDefault": undefined,
+      "statisticsDefault": true,
       "statisticsOptionText": undefined,
       "styles": undefined,
     },
@@ -57,7 +60,7 @@ ShallowWrapper {
         "acceptButtonText": undefined,
         "className": undefined,
         "declineButtonText": undefined,
-        "marketingDefault": undefined,
+        "marketingDefault": true,
         "marketingOptionText": undefined,
         "message": "Text",
         "necessaryOptionText": undefined,
@@ -68,14 +71,14 @@ ShallowWrapper {
         "onTogglePreferencesCookies": [Function],
         "onToggleStatisticsCookies": [Function],
         "policyLink": undefined,
-        "preferencesDefault": undefined,
+        "preferencesDefault": true,
         "preferencesOptionText": undefined,
         "privacyPolicyLinkText": undefined,
         "showDeclineButton": undefined,
         "showMarketingOption": undefined,
         "showPreferencesOption": undefined,
         "showStatisticsOption": undefined,
-        "statisticsDefault": undefined,
+        "statisticsDefault": true,
         "statisticsOptionText": undefined,
         "styles": undefined,
       },
